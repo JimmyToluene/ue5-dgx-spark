@@ -1,0 +1,10 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "",
+	"Category": "",
+	"Description": "Small test project for the aarch64 editor on the GB10 (Vulkan SM6, Lumen, Nanite, Remote Control)",
+	"Modules": [],
+	"Plugins": [
+		{ "Name": "RemoteControl", "Enabled": true }
+	]
+}
