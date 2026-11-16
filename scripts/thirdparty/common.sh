@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 JimmyToluene (https://github.com/JimmyToluene)
 # Shared settings for the aarch64 third-party rebuild scripts in this folder. Sourced, not run.
 #
 #   UE_ROOT   the UnrealEngine 5.4 checkout with patches/unreal-engine-5.4-aarch64.patch applied and

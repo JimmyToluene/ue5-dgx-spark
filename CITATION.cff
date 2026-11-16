@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this work, please credit JimmyToluene (https://github.com/JimmyToluene) and cite it as below."
+title: "ue5-dgx-spark: Unreal Engine 5.4 editor on the NVIDIA DGX Spark (GB10, aarch64 Linux)"
+type: software
+authors:
+  - alias: JimmyToluene
+    website: "https://github.com/JimmyToluene"
+repository-code: "https://github.com/JimmyToluene/ue5-dgx-spark"
+url: "https://github.com/JimmyToluene/ue5-dgx-spark"
+license: Apache-2.0
+date-released: "2026-11-16"
+keywords:
+  - unreal-engine
+  - dgx-spark
+  - nvidia-gb10
+  - aarch64
+  - arm64
+  - nanite
+  - lumen

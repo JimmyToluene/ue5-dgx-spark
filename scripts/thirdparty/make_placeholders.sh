@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 JimmyToluene (https://github.com/JimmyToluene)
 # Placeholders for the x86-only libraries that have no aarch64 build. Every exported function returns 0, so the
 # modules link and the editor starts, but the feature does NOT work:
 #   FBX import/export, Bink audio encoding, coremod, libvpx (WebM), Steam, EOS, OpenXR, PROJ (geo-referencing),

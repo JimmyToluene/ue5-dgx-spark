@@ -24,7 +24,7 @@ How each library the UE 5.4 editor links is provided on aarch64 Linux, and which
 | METIS 5.1.0 | built from the upstream tarball against Epic's `metis.h` | `build_downloaded.sh metis` | Epic's header swaps two option enums |
 | Draco 1.5.6 | built from the upstream tag | `draco` | glTF import |
 | Intel ISPC texture compressor | built with the official ispc 1.21.0 aarch64 release, NEON target | `ispctex` | BC1–7, BC6H, ETC1, ASTC; real, not a placeholder |
-| Embree 3.13.5 | built from the upstream tag (NEON) | `embree` | needs the `Embree3.Build.cs` change in `GB10_RENDERING.md`; Epic ships 3.12.2 for x86 only |
+| Embree 3.13.5 | built from the upstream tag (NEON) | `embree` | needs the `Embree3.Build.cs` change in `ENGINE_CHANGES.md`; Epic ships 3.12.2 for x86 only |
 | FBX SDK, Bink audio encoder, coremod, libvpx, Steam, EOS, OpenXR loader, PROJ, OpenCV | **placeholders** (`tools/make_stub.py`) | `make_placeholders.sh` | link-only; the features do not work |
 | CEF, USD, Perforce, and the plugins listed in the port patch's `UnrealEditor.Target.cs` | disabled by the port patch | — | |
 | Oodle Texture | not loaded (x86 file names) | — | other texture encoders are used |

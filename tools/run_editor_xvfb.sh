@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 JimmyToluene (https://github.com/JimmyToluene)
 # Run the aarch64 editor WITH its real Vulkan renderer on a virtual X display, so the window and viewport
 # can be checked (and screenshotted) from an SSH session or a coding harness, without the DGX console.
 # The NVIDIA driver renders on the GB10 under Xvfb when the Vulkan loader is pointed at the NVIDIA ICD.

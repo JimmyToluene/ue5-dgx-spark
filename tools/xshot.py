@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 JimmyToluene (https://github.com/JimmyToluene)
 """Save the whole screen of an X display as PNG (works with Xvfb):  xshot.py :98 out.png
 Uses `xwd` (x11-apps) and Pillow; prints the mean colour so an all-black capture is easy to spot."""
 import struct

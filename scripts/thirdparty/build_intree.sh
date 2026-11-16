@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 JimmyToluene (https://github.com/JimmyToluene)
 # Rebuild for aarch64 the third-party libraries whose source ships inside the UE 5.4 tree, and link the
 # system libraries the editor needs. Outputs go where the patched .Build.cs files look for them.
 #

@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 JimmyToluene (https://github.com/JimmyToluene)
 """Build an aarch64 placeholder for an x86-64-only library.
 
 The placeholder exports the same function and data names as the original, so aarch64 code that links against

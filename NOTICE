@@ -1,0 +1,17 @@
+ue5-dgx-spark
+Copyright 2026 JimmyToluene — https://github.com/JimmyToluene
+https://github.com/JimmyToluene/ue5-dgx-spark
+
+This product includes work by JimmyToluene (https://github.com/JimmyToluene).
+Any redistribution or derivative work of this repository must keep this NOTICE
+file and credit JimmyToluene with a link to https://github.com/JimmyToluene,
+as required by section 4(d) of the Apache License, Version 2.0.
+
+Documentation and images are licensed under CC BY 4.0 and require the same credit.
+
+Not included and not covered by these licences:
+- Unreal Engine, (c) Epic Games, Inc., licensed under the Unreal Engine EULA.
+- The aarch64 port patch by MrQbit (https://github.com/MrQbit/unreal-dgx), which the
+  build instructions download from its own repository.
+- Third-party libraries built by the scripts (METIS, Draco, Intel ISPC Texture Compressor,
+  Embree and the libraries in the Unreal Engine tree), each under its own licence.

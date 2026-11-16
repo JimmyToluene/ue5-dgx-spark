@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 JimmyToluene (https://github.com/JimmyToluene)
 # All aarch64 third-party work for the UE 5.4 editor, in order. Run after applying the main patch and
 # fetching GitDependencies (README.md steps 1-3), before building UnrealEditor (README.md step 5).
 #

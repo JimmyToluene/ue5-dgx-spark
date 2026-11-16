@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 JimmyToluene (https://github.com/JimmyToluene)
 """Build a closed test room in a new level through Remote Control: white floor/ceiling/back wall, a red and a
 green side wall, two objects and one point light. No sky, so everything the light does not reach directly is
 black unless global illumination works.  usage: make_lumen_room.py   (editor must be running with Remote Control)"""
@@ -23,7 +25,7 @@ def mi(name, rgb):
 
 
 def main():
-    rc.call(rc.LES, "NewLevel", AssetPath="/Game/Test/LumenRoom")
+    rc.new_level("/Game/Test/LumenRoom")
     white, red, green, grey = mi("MI_White", (0.75, 0.75, 0.75)), mi("MI_Red", (0.8, 0.05, 0.05)), mi("MI_Green", (0.08, 0.7, 0.08)), mi("MI_Grey", (0.4, 0.4, 0.42))
     # room 8 m x 8 m x 4 m, open toward -X where the camera stands; cube mesh is 1 m
     rc.spawn_mesh(CUBE, (0, 0, -10), (8, 8, 0.2), material=white, label="Floor")
@@ -46,7 +48,8 @@ def main():
     rc.set(ppv, "bUnbound", True)
     rc.set(ppv, "Settings", {"bOverride_AutoExposureMinBrightness": True, "AutoExposureMinBrightness": 1.0,
                              "bOverride_AutoExposureMaxBrightness": True, "AutoExposureMaxBrightness": 1.0,
-                             "bOverride_AutoExposureBias": True, "AutoExposureBias": 1.5})
+                             "bOverride_AutoExposureBias": True, "AutoExposureBias": -3.0})
+    rc.spawn_class("/Script/Engine.PlayerStart", (-700, 0, 150), label="BenchStart")   # camera for tools/bench_game.sh
     rc.camera((-1050, 0, 200), (0, 0, 0))
     rc.call(rc.LES, "SaveCurrentLevel")
     print("room built:", len(rc.call(rc.EAS, "GetAllLevelActors")), "actors")

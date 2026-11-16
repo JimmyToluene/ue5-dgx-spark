@@ -1,4 +1,6 @@
 #!/bin/bash
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 JimmyToluene (https://github.com/JimmyToluene)
 # Build for aarch64 the third-party libraries that have no source in the UE 5.4 tree. Each source is
 # downloaded once into $UE_TP_WORK/downloads and checked against a fixed hash or commit.
 #
@@ -9,7 +11,7 @@
 #   ispctex   the real Intel ISPC texture compressor (BC1-7, BC6H, ETC1, ASTC) instead of a placeholder,
 #             compiled with the official ispc 1.21.0 aarch64 release (the version Epic bundles for x86).
 #   embree    Embree 3.13.5 (first 3.x with NEON). Needs the Embree3.Build.cs arm64 branch described in
-#             docs/GB10_RENDERING.md; without Embree the editor builds no mesh cards / distance fields for Lumen.
+#             docs/ENGINE_CHANGES.md; without Embree the editor builds no mesh cards / distance fields for Lumen.
 source "$(dirname "$0")/common.sh"
 
 step_metis() {

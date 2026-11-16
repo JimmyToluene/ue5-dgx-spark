@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+# Copyright 2026 JimmyToluene (https://github.com/JimmyToluene)
 """Drive the running Unreal editor through its Remote Control HTTP API (127.0.0.1:30010).
 
     import rc
@@ -89,3 +91,12 @@ def spawn_class(cls, loc, rotation=(0, 0, 0), label=None):
 
 def camera(loc, rotation):
     return call(UES, "SetLevelViewportCameraInfo", CameraLocation=vec(*loc), CameraRotation=rot(*rotation))
+
+
+def new_level(path):
+    """Create an empty level at path (e.g. /Game/Test/MyLevel), replacing an existing one of that name."""
+    if call(EAL, "DoesAssetExist", AssetPath=path):
+        if not call(EAL, "DeleteAsset", AssetPathToDelete=path):
+            raise RCError("could not delete the existing level %s (is it open?)" % path)
+    if not call(LES, "NewLevel", AssetPath=path):
+        raise RCError("could not create the level %s" % path)
